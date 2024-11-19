@@ -23,51 +23,51 @@ const userSchema=new mongoose.Schema({
 const user= mongoose.model("User",userSchema);
 // const employee=mongoose.model("Employee",userSchema)
 
-// const user1=new user({name:"Vishal Patidar",age:22,email:"vishal@gmail.com"});
-// const user2=new user({name:"Raman Agnihotry",age:24,email:"raman@gmail.com"});
-// user2.save().then((res)=>{
-//     console.log(res);
-// }).catch((err)=>{
-//     console.log(err);
-// });
-// user1.save();  
+const user1=new user({name:"Vishal Patidar",age:22,email:"vishal@gmail.com"});
+const user2=new user({name:"Raman Agnihotry",age:24,email:"raman@gmail.com"});
+user2.save().then((res)=>{
+    console.log(res);
+}).catch((err)=>{
+    console.log(err);
+});
+user1.save();  
 
 
 
-// user.insertMany([{
-//     name:"Ankush Patidar",
-//     age:23,
-//     email:"ankush@gmail.com"
-// },{
-//     name:"Priya Patidar",
-//     age:25,
-//     email:"priya@gmail.com"
-// },{
-//     name:"Shivam Patidar",
-//     age:26,
-//     email:"shivam@gmail.com"
-// },{
-//     name:"Suresh Patidar",
-//     age:27,
-//     email:"suresh@gmail.com"
-// }]).then((data)=>{
-//     console.log(data);
-// }).catch((err)=>{
-//     console.log(err);
-// })
+user.insertMany([{
+    name:"Ankush Patidar",
+    age:23,
+    email:"ankush@gmail.com"
+},{
+    name:"Priya Patidar",
+    age:25,
+    email:"priya@gmail.com"
+},{
+    name:"Shivam Patidar",
+    age:26,
+    email:"shivam@gmail.com"
+},{
+    name:"Suresh Patidar",
+    age:27,
+    email:"suresh@gmail.com"
+}]).then((data)=>{
+    console.log(data);
+}).catch((err)=>{
+    console.log(err);
+})
 
 
-// user.find({age:{$gte:23}}).then((res)=>{
-//     console.log(res);
-// }).catch((err)=>{
-//     console.log(err);
-// });
+user.find({age:{$gte:23}}).then((res)=>{
+    console.log(res);
+}).catch((err)=>{
+    console.log(err);
+});
 
-// user.updateMany({age:{$gte:23}},{age:34}).then((res)=>{
-//     console.log(res);
-// }).catch((err)=>{
-//     console.log(err);
-// });
+user.updateMany({age:{$gte:23}},{age:34}).then((res)=>{
+    console.log(res);
+}).catch((err)=>{
+    console.log(err);
+});
 
 
 
